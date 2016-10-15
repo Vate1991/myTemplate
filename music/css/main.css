@@ -1,0 +1,44 @@
+/*整个页面禁止用户选择*/
+body{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+scrollbar{-moz-appearance:none !important;background:rgb(0,255,0) !important;}
+scrollbarbutton{-moz-appearance:none !important;background-color:rgb(0,0,255) !important;}
+scrollbarbutton:hover{-moz-appearance:none !important;background-color:rgb(255,0,0) !important;}
+/* 隐藏上下箭头 */
+scrollbarbutton{display:none !important;}
+/*滚动条变细*/
+::-webkit-scrollbar{width:3px;}/*设置滚动条宽度*/
+::-webkit-scrollbar-track{background-color:#bee1eb;}
+::-webkit-scrollbar-thumb{background-color:#00aff0;}
+::-webkit-scrollbar-thumb:hover {background-color:#9c3}
+::-webkit-scrollbar-thumb:active {background-color:#00aff0}
+
+*{margin: 0;padding: 0;}
+ul li{list-style: none;}
+a{text-decoration: none;color:#000;}
+body{font-size: 14px;font-family: "微软雅黑";background: #333333;}
+.fl{float: left;}
+.ellipsis{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.music_box{width: 800px;height: 500px;position: fixed;top: 50%;left: 50%;margin-top: -250px;margin-left: -400px;background: url(../img/musicbg.jpeg) no-repeat center;}
+.musicbody{height: 450px;}
+.musicbody .mCatalogue{width: 200px;height: 400px;padding: 20px 10px 25px;overflow:auto;}
+.musicTitle{height: 25px;margin-top: 5px;width: 180px;line-height: 25px;cursor:pointer;transition: .5s;}
+.musicTitle.selected{background: #2D2D2D;color: #fff;}
+.musicTitle:hover {background: #2D2D2D;color: #fff;}
+.musicTitle .num{width:30px;height: 100%;text-align: right;}
+.musicTitle .musicInfo{margin-left: 10px;width: 130px;}
+.musicfoot{height: 50px;line-height: 50px;}
+.musicfoot i{font-size: 20px;margin-right: 10px;cursor:pointer;}
+.musicfoot .controlBox{margin-left: 20px;}
+.mContent{width: 580px;height: 450px;position: relative;}
+.mContent .LibrettoBox{position: absolute;width: 500px;height: 400px;top: 25px;left: 40px;overflow: auto;text-align: center;display: none;}
+.mContent .LibrettoBox .mTitle{margin:20px 0 10px;}
+.mContent .LibrettoBox .mLibretto{margin-top: 10px;}
+.progress{background: rgba(255,255,0,.3);width: 500px;height: 2px;position: relative;top: 20px;left: 150px;}
+.progressBar{height: 2px;background: rgba(255,0,0,.5);width: 2px;cursor: pointer;}
